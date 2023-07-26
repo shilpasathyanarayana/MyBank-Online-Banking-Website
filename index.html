@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="active"> <a href="#"> Home </a> </i></li>
+            <li><a href="#"> About Us </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">Mission</a></li>
+                        <li> <a href="#">Vision</a></li>
+                        <li> <a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li><a href="#"> Services </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">Online Banking</a></li>
+                        <li> <a href="#">Mobile banking</a></li>
+                        <li> <a href="#">Student account</a></li>
+                        <li> <a href="#">Foreign Exchange</a></li>
+                        <li> <a href="#">Manage your account</a></li>
+                        <li> <a href="#">Personal Loan</a></li>
+                        <li> <a href="#">Home Loan</a></li>
+                        <li> <a href="#">Car/Home Insurance</a></li>
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a href="#"> Products </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">Checking</a></li>
+                        <li> <a href="#">Savings</a></li>
+                        <li> <a href="#">Credit Card</a></li>
+                        <li> <a href="#">Mortgages</a></li>
+                        <li> <a href="#">Investments</a></li>
+                        <li> <a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a href="#"> Contact </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">Customer Service</a></li>
+                        <li> <a href="#">Email Us</a></li>
+                        <li> <a href="#">Instagram</a></li>
+                        <li> <a href="#">Twitter</a></li>
+                        <li> <a href="#">LinkedIn</a></li>
+                        <li> <a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <button class="button" onclick="func()">Login</button>
+            <!-- <li><a href="#"> <i class='fas fa-lock'></i> Login </a></li> -->
+
+        </ul>
+
+
+    </div>
+
+
+    <div class="header-section">
+        <div class="header-text-container" id="div1">
+            <h1>
+                Next Generation <br /> Digital banking
+            </h1>
+            <p>
+                Take your Financial Life Online!! Your Bank account will be one-step-shop for spending, saving,
+                investing and much more
+            </p>
+            <button class="show-modal" id="mybtn"> Sign-Up </button>
+        </div>
+        <div class="header-image-container">
+            <img src="/images/image1.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- pop-up page section starts here -->
+    <section>
+        <span class="overlay"></span>
+        <div class="modal-box">
+            <div class="nav-signup">
+                <div class="nav-one">
+                    <!-- <i class="fa-solid fa-circle-xmark" id="closebtn" onclick="closemywindow()"></i> -->
+                    <h1>Online banking Enrollment </h1>
+                </div>
+                <div class="second-box">
+                    <div>
+                        <img src="/images/computer.webp" alt="" height="200px" width="200px">
+                    </div>
+                    <div class="check-box">
+                        <h3>You'll need the following <br>
+                            to enroll</h3>
+                        <ul>
+                            <li>Your Social security Number</li>
+                            <li>Your MyBank ATM , Visa Debit <br>
+                                or Visa Credit Card</li>
+                            <li>Your email address</li>
+                            <li>Your MyBank Account Number</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second-para">
+                    <p>Note: if you don't have an SSN, you'll still be able to begin your enrollment online, and then
+                        we'll
+                        contact you to finalize things</p>
+                </div>
+                <div class="buttons">
+                    <button class="close-btn" id="closebtn" onclick="closemywindow()">Ok, Close</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of pop-up page html code -->
+
+    <!-- 3 cards html code starts -->
+    <div class="container">
+        <section class="why-us">
+            <h1>Not sure Where to begin?</h1>
+            <p>We help open banking to turn your bank account into your financial hub <br>Control your finance like
+                never before</p>
+        </section>
+
+        <section class="features-section">
+            <div class="features-item">
+                <img src="/images/onlineb.jpg" alt="">
+                <h1>
+                    Online Banking
+                </h1>
+                <p>
+                    Our modern Web and Mobile <br /> applications allow you to keep <br /> track of your finance where
+                    ever you are!
+                </p>
+            </div>
+
+            <div class="features-item">
+                <img src="/images/credit.png" alt="">
+                <h1>
+                    Credit Cards
+                </h1>
+                <p>
+                    From Cash back to travel benifits<br /> we'll help you <br /> to choose the best credit card for you
+                </p>
+            </div>
+
+            <div class="features-item">
+                <img src="/images/investment.png" alt="">
+                <h1>
+                    Investments
+                </h1>
+                <p>
+                    Tell us a bit about Yourself, and <br /> we'll find <br /> the right investment option for you
+                </p>
+            </div>
+        </section>
+        <!-- card section ends here -->
+
+
+        <!-- Blog section starts -->
+        <section>
+            <div class="blog-section">
+                <h1>latest Articles</h1>
+                <div class="article-container">
+                    <div class="article">
+                        <img src="/images/currency.jpg" alt="">
+                        <div class="content">
+                            <p>Avinash Talpanaje</p>
+                            <h4>Recieve money in any <br /> currency with no fees</h4>
+                            <p>The world is getting smaller and <br /> we are becoming more mobile. so, <br /> why
+                                should you be forced only <br /> recieve money ina single......</p>
+                        </div>
+                    </div>
+
+                    <div class="article">
+                        <img src="/images/investment.webp" alt="">
+                        <div class="content">
+                            <p>Avinash Talpanaje</p>
+                            <h4>Making economics<br /> Useful</h4>
+                            <p>The world is getting smaller and <br /> we are becoming more mobile. so, <br /> why
+                                should you be forced only <br /> recieve money ina single......</p>
+                        </div>
+                    </div>
+
+
+                    <div class="article">
+                        <img src="/images/economics.jpg" alt="">
+                        <div class="content">
+                            <p>Avinash Talpanaje</p>
+                            <h4>Global economics:<br />Perceptions</h4>
+                            <p>The world is getting smaller and <br /> we are becoming more mobile. so, <br /> why
+                                should you be forced only <br /> recieve money ina single......</p>
+                        </div>
+                    </div>
+
+
+                    <div class="article">
+                        <img src="/images/regulations.jpg" alt="">
+                        <div class="content">
+                            <p>Avinash Talpanaje</p>
+                            <h4>Financial<br /> Regulations</h4>
+                            <p>The world is getting smaller and <br /> we are becoming more mobile. so, <br /> why
+                                should you be forced only <br /> recieve money ina single......</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Blog section ends -->
+
+
+        <!-- Footer Html Code -->
+        <footer class="footer">
+            <ul>
+                <li>Customer Support</li>
+                <li>Branch Locator</li>
+                <li>Book an Appointment</li>
+                <li>Privacy</li>
+                <li>Legal</li>
+                <li>Careers at MyBank</li>
+                <li>Feedback Form</li>
+            </ul>
+            <h4>
+                Download our Banking app from
+            </h4>
+            <img src="/images/appstore.svg" alt="">
+            <img src="/images/googleplay.svg" alt="">
+            <div class="footer-contact">
+                <ul>
+                    <li>Contact Us at</li>
+                    <li><img src="/images/youtube-footer.svg" alt=""></li>
+                    <li><img src="/images/instagram-footer.svg" alt=""></li>
+                    <li><img src="/images/twitter-footer.svg" alt=""></li>
+                    <li><img src="/images/linkedin-footer.svg" alt=""></li>
+                    <li><img src="/images/facebook-footer.svg" alt=""></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- footer code ends here -->
+
+
+        <script src="script.js"> </script>
+</body>
+
+</html>

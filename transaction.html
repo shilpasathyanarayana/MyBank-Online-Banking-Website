@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <header>
+            My Online Banking
+        </header>
+        <ul>
+            <li> <a href="#" onclick="activate('dashboard')">dashboard</a></li>
+            <li> <a href="#" onclick="activate('account')">My Account</a></li>
+            <li> <a href="#" onclick="activate('transfer')">Transfer</a></li>
+            <li> <a href="#" onclick="activate('loans')">Loans</a></li>
+            <li> <a href="#" onclick="activate('paybills')">Pay Bills</a></li>
+            <li> <a href="#" onclick="activate('transaction-history')">Transaction History</a></li>
+            <li><button onclick="logout()" class="logout-btn">
+                <a href="#">LogOut</a>
+            </button></li>
+        </ul>
+    </div>
+    <div class="click-options">
+      
+        <div class="sb dashboard" id="dashboard" >
+            <h2>Welcome</h2>
+            <br>
+            <h3><span class="first"></span><span class="last"></span></h3>
+            <div class="dashboard">
+                <img src="./images/happy.avif" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="sb account" id="account">
+            <br> <br>
+            <h1>My Bank</h1>
+            <br> <br>
+            <div class="acc-details">
+                <div class="accnum">Your Account Number is </div>
+                <div id="email">e-mail address</div>
+                <div id="cardnum">Card number</div>
+                <div id="balance">Current Balance</div>
+                <div id="amount">Opening amount</div>
+            </div>
+        </div>
+
+
+        <div class="sb transfer" id="transfer">
+            <h1>My Bank- interac e-transfer </h1>
+            <br>
+            <h3>Welcome <span class="first"></span><span class="last"></span></h3>
+
+            <div class="send-money">
+                
+                <span class="accnum"></span>
+                <br>
+                <br>
+                <br>
+                <input placeholder="Enter account number to send the money" id="to_account">
+                
+                <!-- <label for="To account" id="to">To Account</label>
+                <select name="to-account" id="to_account">
+                    <option value="to account"> --select to acc num--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> -->
+
+            </div>
+            <br> <br>
+            <h5>Enter the amount below</h5>
+            <input type="number" placeholder="$0.00" id="transfer_amount">
+            <br> <br>
+            <button class="button" onclick="TransferMoney()">Send money</button>
+        </div>
+
+
+        <div class="sb Loans" id="loans">
+            <div class="carloan">
+                <img src="./images/carloan.webp" alt="">
+                <h4>looking for a low intrest rate loans!?</h4>
+                <a href="#">Click Here</a>
+            </div>
+
+            <div class="housing-loan">
+                <img src="./images/homeloan.jpg" alt="">
+                <h4>Home loan Best in town!!</h4>
+                <a href="#">Click Here</a>
+            </div>
+
+        </div>
+
+
+        <div class="sb paybills" id="paybills">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="title">Billing Address</h3>
+
+                        <div class="inputBox">
+                            <span>Full Name:</span>
+                            <input type="text" placeholder="name">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Email:</span>
+                            <input type="text" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>address:</span>
+                            <input type="text" placeholder="unit num - street -locality">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>City:</span>
+                            <input type="text" placeholder="city name">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Proviance:</span>
+                                <input type="text" placeholder="Proviance">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Postal Code:</span>
+                                <input type="text" placeholder="X0X 0X0">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <h3 class="title">Payment</h3>
+
+                        <div class="inputBox">
+                            <span>Cards Accepted:</span>
+                            <img src="./images/card_img.png" alt="">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Name on the card:</span>
+                            <input type="text" placeholder="Full name">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Card Number:</span>
+                            <input type="number" placeholder="0000-0000-0000-0000">
+                        </div>
+
+
+                        <div class="inputBox">
+                            <span>Expiry Date</span>
+                            <input type="date" placeholder="MM/YYYY">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>CVV:</span>
+                            <input type="number" placeholder="XXX">
+                        </div>
+                    </div>
+
+                </div>
+                <input type="submit" value="proceed to checkout >>" class="submit-btn">
+            </form>
+        </div>
+
+
+        <div class="sb Transaction-history" id="transaction-history">
+            <div>
+
+            </div>
+            <table id="myTable" border="1px">
+                <tr class="colm">
+                    <th>From-Account</th>
+                    <th>To-Account</th>
+                    <th>Transaction Amount</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="LogOut">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+
+</html>

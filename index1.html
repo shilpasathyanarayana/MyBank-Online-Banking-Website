@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page for Mybank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="heading">
+            <img src="/images/yourbank.avif" alt="">
+            <h2>Online Banking Enrollment</h2>
+            <div class="line"></div>
+            <p>secure, convenient access to your accounts from <br>your mobile devices tablet or desktop computers.
+            </p>
+        </div>
+        <div class="info">
+            <h2>Your Personal information</h2>
+            <p>Your personal information is safe with us.For more queries call us at our helpline 18001004144</p>
+        </div>
+
+        <div class="details">
+            First Name:<input type="First Name" placeholder="Enter your first name">
+            Last Name : <input type="last name" placeholder="Enter your last name">
+            E-mail Address: <input type="email" placeholder="please enter an e-mail">
+        </div>
+
+        <div>
+            <br> <br> <br>
+            <h2>Personal account information</h2>
+        </div>
+        <br>
+        <div>
+            <h4> Account type : <select name="account-type" id="account-type"></h4>
+            <option value="">-Select Account Type</option>
+            <option value="Checking">Checking</option>
+            <option value="Savings">Savings</option>
+            <option value="Loan account">Loan Account</option>
+            <option value="Credit card">Credit Card</option>
+            </select>
+        </div>
+        <div class="details">
+            ATM or Credit card number: <input type="number" placeholder="Full number without dashes">
+            Social Security Number : <input type="number" placeholder="please enter full SSN">
+            Account Number : <input type="number" placeholder="personal account number">
+        </div>
+
+
+        <div class="username">
+            <h2>User Name and Password Set-up</h2>
+            <p>Make sure your password is strong- it must contain
+                letter charecter, uppercase and special charector</p>
+
+        </div>
+
+        <div class="details">
+            Create User Name : <input type="user name" placeholder="8-20 charecters, start with a letter">
+            Your Password : <input type="password" placeholder="Enter your password">
+            Re-enter your password : <input type="password" placeholder="Enter again to confirm your password">
+        </div>
+
+        <button class="continue">cancel</button>
+        <button class="continue">Continue</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
